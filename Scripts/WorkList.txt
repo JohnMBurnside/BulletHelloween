@@ -1,0 +1,18 @@
+BACK LIST()
+{
+}
+WORKING ON()
+{
+	PlayerHealth.cs
+	BossHealth.cs
+	BossHealthBar.cs
+}
+TESTING()
+{
+	PauseMenu.cs
+	PlayerShoot.cs
+}
+FINSIHED()
+{
+	BulletDestroy.cs
+}
