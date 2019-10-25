@@ -274,7 +274,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -228.8, y: 210.51}
+  m_AnchoredPosition: {x: -490, y: 240.3}
   m_SizeDelta: {x: 160, y: 79.72}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &89521463
@@ -466,7 +466,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.85400003}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -144.6, y: 142.51}
+  m_AnchoredPosition: {x: -412.6, y: 175.1}
   m_SizeDelta: {x: 1454.75, y: 837.17}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &189872757
@@ -489,7 +489,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: dc995b43dd2f43d4190407ed2a595ace, type: 3}
-    m_FontSize: 124
+    m_FontSize: 160
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -1002,7 +1002,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 231.3, y: 220.5}
+  m_AnchoredPosition: {x: 486.4, y: 246.9}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &517753215
@@ -1173,7 +1173,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 316.7, y: 171.7}
+  m_AnchoredPosition: {x: 566, y: 198.1}
   m_SizeDelta: {x: 450, y: 141.93}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &634013766
@@ -1389,7 +1389,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 326.8, y: 197.2}
+  m_AnchoredPosition: {x: 582.8, y: 224.4}
   m_SizeDelta: {x: 1594.35, y: 259.58}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1356721855
@@ -2071,9 +2071,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1591872138}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd9944d0797cd074fb0c672e95b3be31, type: 3}
+  m_Script: {fileID: 11500000, guid: 67b6aa3cbebdc4841b58a90620795d0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  menuOn: 0
 --- !u!114 &1591872140
 MonoBehaviour:
   m_ObjectHideFlags: 0

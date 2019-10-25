@@ -1,52 +1,51 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
-   
-    // Start is called before the first frame update
+    //VARIABLES
+    public bool menuOn = false;
+    //START FUNCTION
     void Start()
     {
-        GetComponent<Canvas>().enabled = false;   
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        { 
-            if (Time.timeScale == 1)
-            {
-                GetComponent<Canvas>().enabled = true;
-                Time.timeScale = 0;
-            }
-            else
-            {
-                GetComponent<Canvas>().enabled = false;
-                Time.timeScale = 1;
-            }
-        
-       
-        }
-     
-    }
-    public void LoadMainMenu()
-    {
-        SceneManager.LoadScene("MainMenu");
-        Time.timeScale = 1;
-    }
-    public void Resume()
-    {
-        Time.timeScale = 1;
         GetComponent<Canvas>().enabled = false;
     }
-    public void Restart()
+    //UPDATE FUNCTION
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space) && menuOn == false)
+        {
+            Time.timeScale = 0;
+            menuOn = true;
+            GetComponent<Canvas>().enabled = true;
+        }
+        else if(Input.GetKeyDown(KeyCode.Space) && menuOn == true)
+        {
+            Time.timeScale = 1;
+            menuOn = false;
+            GetComponent<Canvas>().enabled = false;
+        }
+    }
+    //MAIN MENU FUNCTION
+    void MainMenu()
+    {
+        SceneManager.LoadScene("Main Menu");
+    }
+    //RESUME FUNCTION
+    void Resume()
     {
         Time.timeScale = 1;
+        menuOn = false;
+        GetComponent<Canvas>().enabled = false;
+    }
+    //RESTART FUNCTION
+    void Restart()
+    {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
-    public void QuitGame()
+    //QUIT FUNCTION
+    void Quit()
     {
         Application.Quit();
     }
