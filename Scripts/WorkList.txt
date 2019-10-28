@@ -3,16 +3,21 @@ BACK LIST()
 }
 WORKING ON()
 {
-	PlayerHealth.cs
-	BossHealth.cs
-	BossHealthBar.cs
+	Script BossAI.cs
 }
 TESTING()
 {
-	PauseMenu.cs
-	PlayerShoot.cs
+	Script PauseMenu.cs
+	Script PlayerShoot.cs
+	Script MainMenu.cs
+	Script BossHealth.cs
+	Script PlayerHealth.cs
+	Script EnemyAI.cs
 }
 FINSIHED()
 {
-	BulletDestroy.cs
+	Script BulletDestroy.cs
+	Script BossHealthBar.cs
+	Script EnemyMovement.cs
+	Script EnemyAnimation.cs
 }

@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 public class PlayerShoot : MonoBehaviour
@@ -13,6 +13,11 @@ public class PlayerShoot : MonoBehaviour
     public GameObject prefab;
     //UPDATE FUNCTION
     void Update()
+    {
+        Shoot();
+    }
+    //SHOOT FUNCTION
+    public void Shoot()
     {
         timer += Time.deltaTime;
         if (Input.GetButton("Fire1") && timer > shootDelay)

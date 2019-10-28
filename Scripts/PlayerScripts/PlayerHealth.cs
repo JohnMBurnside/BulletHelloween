@@ -9,11 +9,9 @@ public class PlayerHealth : MonoBehaviour
     //HEALTH
     public int health = 5;
     public Slider healthSlider;
-    //public GameObject healthHUD;
     //SHIELD
     public int shield = 5;
     public Slider shieldSlider;
-    //public GameObject shieldHUD;
     //LIVES
     public int lives = 3;
     public Text livesText;
@@ -23,19 +21,20 @@ public class PlayerHealth : MonoBehaviour
         //HEALTH
         healthSlider.maxValue = health;
         healthSlider.value = health;
-        //healthHUD.GetComponent<Canvas>().enabled = true;
         //SHIELD
         shieldSlider.maxValue = shield;
         shieldSlider.value = shield;
-        //shieldHUD.GetComponent<Canvas>().enabled = true;
         //LIVES
-        lives = PlayerPrefs.GetInt("lives", lives);
+        lives = PlayerPrefs.GetInt("lives");
         livesText.text = "x" + lives;
     }
-    //UPDATE FUNCTION
     void Update()
     {
-
+        if (lives < 0)
+        {
+            PlayerPrefs.SetInt("lives", 3);
+            //SceneManager.LoadScene("Game Over");
+        }
     }
     //TRIGGER FUNCTION
     void OnTriggerEnter2D(Collider2D collision)
@@ -57,12 +56,9 @@ public class PlayerHealth : MonoBehaviour
                     {
                         if (lives > -1)
                         {
-                            PlayerPrefs.SetInt("lives", lives - 1);
-                            livesText.text = "x" + lives;
                             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                            PlayerPrefs.SetInt("lives", lives - 1);
                         }
-                        else if (lives > 0)
-                            SceneManager.LoadScene("Game Over");
                     }
                 }
             }
