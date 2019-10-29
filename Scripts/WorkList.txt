@@ -1,5 +1,8 @@
 BACK LIST()
 {
+	Script HealthUp.cs
+	Script ShieldUp.cs
+	Script PowerUp.cs
 }
 WORKING ON()
 {

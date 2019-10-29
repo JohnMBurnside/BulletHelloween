@@ -6,7 +6,8 @@ public class EnemyAI : MonoBehaviour
     //VARIABLES
     //GENERAL VARIABLES
     public Transform player;
-    //MOVEMENT VARIABLES
+    public GameObject prefab;
+    //MOVEMENT BALANCE VARIABLES
     public Vector2 paceDirection;
     Vector3 startPosition;
     public float chaseSpeed = 2.0f;
@@ -15,8 +16,7 @@ public class EnemyAI : MonoBehaviour
     public float paceDuration = 3.0f;
     public float chaseTriggerDistance = 5.0f;
     public bool home = true;
-    //SHOOT VARIABLES
-    public GameObject prefab;
+    //SHOOT BALANCE VARIABLES
     public float bulletSpeed = 6.0f;
     public float bulletLifetime = 1.0f;
     public float shootDelay = 0.5f;
@@ -92,7 +92,6 @@ public class EnemyAI : MonoBehaviour
             timer = 0;
             GameObject bullet = Instantiate(prefab, transform.position, Quaternion.identity);
             Vector3 playerPosition = player.position;
-            Debug.Log(playerPosition);
             Vector2 shootDir = new Vector2(playerPosition.x - transform.position.x, playerPosition.y - transform.position.y);
             shootDir.Normalize();
             bullet.GetComponent<Rigidbody2D>().velocity = shootDir * bulletSpeed;
