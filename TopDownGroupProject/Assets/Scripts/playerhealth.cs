@@ -1,60 +1,66 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-public class playerhealth : MonoBehaviour
+public class PlayerHealth : MonoBehaviour
 {
-    public int health = 10;
-    public Text healthText;
+    //VARIABLES
+    //HEALTH
+    public int health = 5;
     public Slider healthSlider;
-    public int lives = 10;
-     void Start()
+    //SHIELD
+    public int shield = 5;
+    public Slider shieldSlider;
+    //LIVES
+    public int lives = 3;
+    public Text livesText;
+    //START FUNCTION
+    void Start()
     {
-        healthText.text = "Health: " + health;
+        //HEALTH
         healthSlider.maxValue = health;
         healthSlider.value = health;
-        //PlayerPrefs.SetInt("lives", lives);
+        //SHIELD
+        shieldSlider.maxValue = shield;
+        shieldSlider.value = shield;
+        //LIVES
         lives = PlayerPrefs.GetInt("lives");
+        livesText.text = "x" + lives;
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    void Update()
     {
-        if(collision.gameObject.tag == "Enemy")
+        if (lives < 0)
         {
-            health--;
-            healthText.text = "Health:" + health;
-            healthSlider.value = health;
-            //same as health -= 1, or health = health
-            if(health < 1)
-            {
-                if (lives > 0)
-                {
-                    SceneManager.LoadScene(
-                        SceneManager.GetActiveScene().name);
-                    //SceneManager.LoadScene("Lose");
-                    PlayerPrefs.SetInt("lives", lives - 1);
-                }
-                else
-                {
-                    SceneManager.LoadScene("Lose");
-                }
-            }
+            PlayerPrefs.SetInt("lives", 3);
+            //SceneManager.LoadScene("Game Over");
         }
     }
-    private void OnCollsionEnter2D(Collider2D collision)
+    //TRIGGER FUNCTION
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Enemy")
+        if (collision.gameObject.tag == "Bullet")
         {
-            health--;
-            healthText.text = "Health:" + health;
-            healthSlider.value = health;
-            //same as health -= 1, or health = health
-            if (health < 1)
+            if (shield > 0)
             {
-                SceneManager.LoadScene(
-                    SceneManager.GetActiveScene().name);
-                //SceneManager.LoadScene("Lose");
-
+                shield--;
+                shieldSlider.value = shield;
+            }
+            else if (shield < 1)
+            {
+                if (health > 0)
+                {
+                    health--;
+                    healthSlider.value = health;
+                    if (health < 1)
+                    {
+                        if (lives > -1)
+                        {
+                            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                            PlayerPrefs.SetInt("lives", lives - 1);
+                        }
+                    }
+                }
             }
         }
     }
