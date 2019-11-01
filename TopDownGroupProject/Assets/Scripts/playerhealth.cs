@@ -30,16 +30,44 @@ public class PlayerHealth : MonoBehaviour
     }
     void Update()
     {
+        //PlayerPrefs.SetInt("lives", 0);
         if (lives < 0)
         {
-            PlayerPrefs.SetInt("lives", 3);
-            //SceneManager.LoadScene("Game Over");
+            
+            SceneManager.LoadScene("Game Over");
+        }
+    }
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Bullet" || collision.gameObject.tag == "Enemy")
+        {
+            if (shield > 0)
+            {
+                shield--;
+                shieldSlider.value = shield;
+            }
+            else if (shield < 1)
+            {
+                if (health > 0)
+                {
+                    health--;
+                    healthSlider.value = health;
+                    if (health < 1)
+                    {
+                        if (lives > -1)
+                        {
+                            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                            PlayerPrefs.SetInt("lives", lives - 1);
+                        }
+                    }
+                }
+            }
         }
     }
     //TRIGGER FUNCTION
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Bullet")
+        if (collision.gameObject.tag == "Bullet" || collision.gameObject.tag == "Enemy")
         {
             if (shield > 0)
             {
