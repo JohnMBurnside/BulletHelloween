@@ -10,7 +10,7 @@ public class PlayerShoot : MonoBehaviour
     public float bulletLifetime = 1.0f;
     public float timer = 0f;
     //BULLET
-    public GameObject prefab;
+    public GameObject prefab; 
     //UPDATE FUNCTION
     void Update()
     {
