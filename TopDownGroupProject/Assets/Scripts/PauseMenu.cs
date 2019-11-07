@@ -14,13 +14,13 @@ public class PauseMenu : MonoBehaviour
     //UPDATE FUNCTION
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && menuOn == false)
+        if (Input.GetKeyDown(KeyCode.Escape) && menuOn == false)
         {
             Time.timeScale = 0;
             menuOn = true;
             GetComponent<Canvas>().enabled = true;
         }
-        else if(Input.GetKeyDown(KeyCode.Space) && menuOn == true)
+        else if(Input.GetKeyDown(KeyCode.Escape) && menuOn == true)
         {
             Time.timeScale = 1;
             menuOn = false;
@@ -28,24 +28,24 @@ public class PauseMenu : MonoBehaviour
         }
     }
     //MAIN MENU FUNCTION
-    void MainMenu()
+    public void MainMenu()
     {
         SceneManager.LoadScene("Main Menu");
     }
     //RESUME FUNCTION
-    void Resume()
+    public void Resume()
     {
         Time.timeScale = 1;
         menuOn = false;
         GetComponent<Canvas>().enabled = false;
     }
     //RESTART FUNCTION
-    void Restart()
+   public void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     //QUIT FUNCTION
-    void Quit()
+   public void Quit()
     {
         Application.Quit();
     }

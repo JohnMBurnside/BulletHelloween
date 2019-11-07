@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Enemy
   - Bullet
+  - Headless Boss
+  - Spawner
   layers:
   - Default
   - TransparentFX
@@ -18,8 +20,8 @@ TagManager:
   - Enemy
   - Player
   - Bullet
-  - 
-  - 
+  - Boss
+  - Spawner
   - 
   - 
   - 
