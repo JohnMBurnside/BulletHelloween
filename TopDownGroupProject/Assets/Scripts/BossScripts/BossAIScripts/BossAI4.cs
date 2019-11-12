@@ -111,14 +111,14 @@ public class BossAI4 : MonoBehaviour
         if (shadeKill == 2)
         {
             GetComponent<SpriteRenderer>().enabled = true;
-            GetComponent<CircleCollider2D>().enabled = true;
+            GetComponent<BoxCollider2D>().enabled = true;
             shootOff = false;
             shade = 0;
         }
         else
         {
             GetComponent<SpriteRenderer>().enabled = false;
-            GetComponent<CircleCollider2D>().enabled = false;
+            GetComponent<BoxCollider2D>().enabled = false;
             shootOff = true;
         }
         //TELEPORT CONDITION
