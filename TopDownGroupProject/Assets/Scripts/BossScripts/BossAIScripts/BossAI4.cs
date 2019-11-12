@@ -39,9 +39,9 @@ public class BossAI4 : MonoBehaviour
     [Header("Wave Time Settings")] 								    //VARIABLES THAT'll CONTROL WHEN WAVES AND UPGRADES WILL OCCUR
     public int firstWave = 0;										//Time when the first wave will occur
     public int secondWave = 5;									    //Time when the second wave will occur
-    public int thirdWave = 15;									    //Time when the third wave will occur
-    public int fourthWave = 25;                                     //Time when the fourth wave will occur
-    public int reset = 35;                                          //Time when the waves will reset
+    public int thirdWave = 10;									    //Time when the third wave will occur
+    public float fourthWave = 12.5f;                                //Time when the fourth wave will occur
+    public int reset = 15;                                          //Time when the waves will reset
     float waveTimer = 0f;                                           //Timer for the waves
     [Header("Shoot Pattern Settings")]                              //VARIABLES THAT'LL CONTROL SHOOTING PATTERNS
     public Vector2 startPoint;                                      //Variable for the starting position of the pattern
@@ -71,7 +71,6 @@ public class BossAI4 : MonoBehaviour
     public Vector2 teleport1 = new Vector2(+3, 0);                  //How far the enemy will teleport the first time
     public Vector2 teleport2 = new Vector2(-3, 0);                  //How far the enemy will teleport the second time
     [Header("Shadow Settings")]                                     //VARIABLES FOR WHERE THE BOSS WILL SPAWN ITS SHADE
-    public Vector2 safePoint = new Vector2(0, +100);                //Safe point for boss to teleport to
     public Vector2 shade1 = new Vector2(0, +2);                     //Where the boss will spawn its shade
     public Vector2 shade1Point;                                     //Shade area 1 position
     public Vector2 shade2 = new Vector2(0, -2);                     //Where the boss will spawn its shade
@@ -80,70 +79,48 @@ public class BossAI4 : MonoBehaviour
     public int shadeCondition;                                      //How much time the boss is hit for the shades to spawn
     public int shadeKill = 2;                                       //How many shade you killed
     public int shade = 0;                                           //Variable for Shadow function
+    public bool shootOff = false;                                   //Variable to turn shooting off
     //START FUNCTION
     void Start()
     {
+        //INTIAL POINTS
         homePoint = boss.GetComponent<Transform>().position;
-        shadeCondition = boss.GetComponent<BossHealth>().maxBossHealth / 4;
         startPoint = boss.GetComponent<Transform>().position;
-        homePoint = startPoint;
-        teleportArea1Point = new Vector2(startPoint.x + teleport1.x, startPoint.y + teleport1.y);
-        teleportArea2Point = new Vector2(startPoint.x + teleport2.x, startPoint.y + teleport2.y);
+        //SHADE POINTS
+        shadeCondition = boss.GetComponent<BossHealth>().maxBossHealth / 4;
         shade1Point = new Vector2(startPoint.x + shade1.x, startPoint.y + shade1.y);
         shade2Point = new Vector2(startPoint.x + shade2.x, startPoint.y + shade2.y);
+        //TELEPORT POINTS
+        teleportArea1Point = new Vector2(startPoint.x + teleport1.x, startPoint.y + teleport1.y);
+        teleportArea2Point = new Vector2(startPoint.x + teleport2.x, startPoint.y + teleport2.y);
+
     }
     //UPDATE FUNCTION
     void Update()
     {
         //SHADE SPAWN
-        /*if (bossActive == true)
+        if (hitCounterShade > shadeCondition)
         {
-            if (hitCounter > shadeCondition)
+            if (shade < 2)
             {
-                if (shade < 2)
-                {
-                    Shadow();
-                    shade++;
-                }
-                else
-                    hitCounter = 0;
-            }
-            if (shadeKill == 2)
-            {
-                GetComponent<Transform>().position = homePoint;
-                shade = 0;
+                Shadow();
+                shade++;
             }
             else
-                GetComponent<Transform>().position = safePoint;
-        }*/
-        //WAVES
-        if (bossActive == true)
+                hitCounterShade = 0;
+        }
+        if (shadeKill == 2)
         {
-            waveTimer += Time.deltaTime;
-            if (waveTimer > firstWave && waveTimer < secondWave)
-            {
-                shootPatternDelayVar1 = 0.5f;
-                shootPatternDelayVar2 = 1.25f;
-                shootPatternDelayVar3 = 0.5f;
-                ShootPatternOneVar1(numberOfBullets);
-                ShootPatternOneVar2(numberOfBullets);
-            }
-            else if (waveTimer > secondWave && waveTimer < thirdWave)
-            {
-                bulletSpeed = 3;
-                ShootPatternOneVar1(numberOfBullets);
-                ShootPatternOneVar2(numberOfBullets);
-                ShootPatternOneVar3(numberOfBullets);
-            }
-            else if (waveTimer > thirdWave && waveTimer < fourthWave)
-            {
-                bulletSpeed = 5;
-                ShootPatternTwoVar1();
-            }
-            else if (waveTimer > fourthWave && waveTimer < reset)
-                ShootPatternTwoVar2();
-            else
-                waveTimer = 0;
+            GetComponent<SpriteRenderer>().enabled = true;
+            GetComponent<CircleCollider2D>().enabled = true;
+            shootOff = false;
+            shade = 0;
+        }
+        else
+        {
+            GetComponent<SpriteRenderer>().enabled = false;
+            GetComponent<CircleCollider2D>().enabled = false;
+            shootOff = true;
         }
         //TELEPORT CONDITION
         if (bossActive == true && hitCounter >= hitCounterTeleport)
@@ -153,7 +130,46 @@ public class BossAI4 : MonoBehaviour
         }
         //UPGRADE CONDITION
         if (boss.GetComponent<BossHealth>().bossHealth < boss.GetComponent<BossHealth>().maxBossHealth / 4)
-            hitCounterTeleport = 5;
+            hitCounterTeleport = 10;
+        //WAVES
+        if (bossActive == true)
+        {
+            waveTimer += Time.deltaTime;
+            if (waveTimer > firstWave && waveTimer < secondWave)
+            {
+                shootPatternDelayVar1 = 0.5f;
+                shootPatternDelayVar2 = 1.25f;
+                shootPatternDelayVar3 = 0.5f;
+                if(shootOff == false)
+                {
+                    ShootPatternOneVar1(numberOfBullets);
+                    ShootPatternOneVar2(numberOfBullets);
+                }
+            }
+            else if (waveTimer > secondWave && waveTimer < thirdWave)
+            {
+                bulletSpeed = 3;
+                if (shootOff == false)
+                {
+                    ShootPatternOneVar1(numberOfBullets);
+                    ShootPatternOneVar2(numberOfBullets);
+                    ShootPatternOneVar3(numberOfBullets);
+                }
+            }
+            else if (waveTimer > thirdWave && waveTimer < fourthWave)
+            {
+                bulletSpeed = 5;
+                if(shootOff == false)
+                    ShootPatternTwoVar1();
+            }
+            else if (waveTimer > fourthWave && waveTimer < reset)
+            {
+                if(shootOff == false)
+                    ShootPatternTwoVar2();
+            }
+            else
+                waveTimer = 0;
+        }
     }
     //TRIGGER FUNCTION
     void OnTriggerEnter2D(Collider2D collision)
@@ -178,7 +194,7 @@ public class BossAI4 : MonoBehaviour
     {
         if (home == true)
         {
-            boss.GetComponent<Transform>().position = teleportArea1Point;
+            GetComponent<Transform>().position = teleportArea1Point;
             home = false;
             teleportArea1 = true;
         }
@@ -284,12 +300,12 @@ public class BossAI4 : MonoBehaviour
         newTimer += Time.deltaTime;
         if (newTimer < 1f)
         {
-            shootPatternDelayVar1 = 0f;
+            shootPatternDelayVar1 = 0.1f;
             ShootPatternOneVar1(numberOfBullets);
         }
         else if (newTimer > 1.15f && newTimer < 2.15f)
         {
-            shootPatternDelayVar2 = 0f;
+            shootPatternDelayVar2 = 0.1f;
             ShootPatternOneVar2(numberOfBullets);
         }
         else if (newTimer > 2.3f)
@@ -301,17 +317,17 @@ public class BossAI4 : MonoBehaviour
         newTimer += Time.deltaTime;
         if (newTimer < 1f)
         {
-            shootPatternDelayVar1 = 0f;
+            shootPatternDelayVar1 = 0.1f;
             ShootPatternOneVar1(numberOfBullets);
         }
         else if (newTimer > 1.15f && newTimer < 2.15f)
         {
-            shootPatternDelayVar2 = 0f;
+            shootPatternDelayVar2 = 0.1f;
             ShootPatternOneVar2(numberOfBullets);
         }
         else if (newTimer > 2.3f && newTimer < 3.3f)
         {
-            shootPatternDelayVar3 = 0f;
+            shootPatternDelayVar3 = 0.1f;
             ShootPatternOneVar3(numberOfBullets);
         }
         else if (newTimer > 3.45f)
