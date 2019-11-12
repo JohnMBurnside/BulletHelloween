@@ -96,7 +96,7 @@ public class BossAI4 : MonoBehaviour
     void Update()
     {
         //SHADE SPAWN
-        if (bossActive == true)
+        /*if (bossActive == true)
         {
             if (hitCounter > shadeCondition)
             {
@@ -115,7 +115,7 @@ public class BossAI4 : MonoBehaviour
             }
             else
                 GetComponent<Transform>().position = safePoint;
-        }
+        }*/
         //WAVES
         if (bossActive == true)
         {

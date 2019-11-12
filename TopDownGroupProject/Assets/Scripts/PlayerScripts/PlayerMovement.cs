@@ -14,3 +14,4 @@ public class PlayerMovement : MonoBehaviour
         GetComponent<Rigidbody2D>().velocity = moveDir * speed;
     }
 }
+///END OF SCRIPT!

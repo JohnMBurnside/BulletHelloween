@@ -12,3 +12,4 @@ public class PlayerAnimation : MonoBehaviour
         GetComponent<Animator>().SetFloat("y", y);
     }
 }
+///END OF SCRIPT!

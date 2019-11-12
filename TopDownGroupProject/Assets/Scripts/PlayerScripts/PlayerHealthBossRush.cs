@@ -1,10 +1,14 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-public class PlayerHealth : MonoBehaviour
+public class PlayerHealthBossRush : MonoBehaviour
 {
+    /// <summary>
+    /// ~Player Health(Boss Rush)
+    ///     -Only diffrence from the regular player health is there is no lives
+    /// </summary>
     [Header("Notes")]                               //NOTES
     [TextArea]                                      //TAG NOTES
     [Tooltip("Notes for what to name tags")]        //TAG NOTES
@@ -31,9 +35,6 @@ public class PlayerHealth : MonoBehaviour
     public int maxShield = 5;                       //Max shield variable
     public int shield = 5;                          //Shield variable
     public Slider shieldSlider;                     //Shield slider
-    [Header("Life Settings")]                       //VARIABLES FOR LIVES
-    public int lives = 3;                           //Lives variable
-    public Text livesText;                          //Lives text
     [Header("Power Up Variables")]                  //GENERAL VARIABLES
     public float powerUpTime = 10;                  //How long a power up is active for
     public float powerUpTimer = 0f;                 //Timer
@@ -46,17 +47,12 @@ public class PlayerHealth : MonoBehaviour
         //SHIELD
         shieldSlider.maxValue = shield;
         shieldSlider.value = shield;
-        //LIVES
-        lives = PlayerPrefs.GetInt("lives");
-        livesText.text = "x" + lives;
     }
     //UPDATE FUNCTION
     void Update()
     {
-        if (lives < 0)
-        {
-            SceneManager.LoadScene("Game Over");
-        }
+        if (health < 1)
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         if (powerUpTimer > powerUpTime)
             player.GetComponent<PlayerShoot>().shootDelay = 0.5f;
         if (health > maxHealth)
@@ -80,14 +76,6 @@ public class PlayerHealth : MonoBehaviour
                 {
                     health--;
                     healthSlider.value = health;
-                    if (health < 1)
-                    {
-                        if (lives > -1)
-                        {
-                            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-                            PlayerPrefs.SetInt("lives", lives - 1);
-                        }
-                    }
                 }
             }
         }
@@ -133,14 +121,6 @@ public class PlayerHealth : MonoBehaviour
                 {
                     health--;
                     healthSlider.value = health;
-                    if (health < 1)
-                    {
-                        if (lives > -1)
-                        {
-                            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-                            PlayerPrefs.SetInt("lives", lives - 1);
-                        }
-                    }
                 }
             }
         }

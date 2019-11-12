@@ -26,3 +26,4 @@ public class Credits : MonoBehaviour
             SceneManager.LoadScene("Main Menu");
     }
 }
+///END OF SCRIPT!

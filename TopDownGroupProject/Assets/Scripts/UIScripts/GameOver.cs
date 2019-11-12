@@ -21,3 +21,4 @@ public class GameOver : MonoBehaviour
         Application.Quit();
     }
 }
+///END OF SCRIPT!
