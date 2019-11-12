@@ -31,11 +31,11 @@ public class PlayerHealth : MonoBehaviour
     void Update()
     {
         //PlayerPrefs.SetInt("lives", 0);
-        if (lives < 0)
+        /*if (lives < 0)
         {
             
             SceneManager.LoadScene("Game Over");
-        }
+        }*/
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
