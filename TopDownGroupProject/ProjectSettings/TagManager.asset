@@ -8,6 +8,13 @@ TagManager:
   - Bullet
   - Headless Boss
   - Spawner
+  - BossThree
+  - Health Potion
+  - Shield Potion
+  - Power Potion
+  - Full Shield Potion
+  - Win
+  - FinalBoss
   layers:
   - Default
   - TransparentFX
@@ -22,8 +29,8 @@ TagManager:
   - Bullet
   - Boss
   - Spawner
-  - 
-  - 
+  - Enemy Bullets
+  - Player Bullets
   - 
   - 
   - 
