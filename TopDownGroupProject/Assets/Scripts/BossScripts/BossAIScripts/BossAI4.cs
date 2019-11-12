@@ -93,7 +93,6 @@ public class BossAI4 : MonoBehaviour
         //TELEPORT POINTS
         teleportArea1Point = new Vector2(startPoint.x + teleport1.x, startPoint.y + teleport1.y);
         teleportArea2Point = new Vector2(startPoint.x + teleport2.x, startPoint.y + teleport2.y);
-
     }
     //UPDATE FUNCTION
     void Update()
