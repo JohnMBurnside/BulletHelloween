@@ -17,6 +17,7 @@ TagManager:
   - FinalBoss
   - Level 1 Win
   - Level 2 Win
+  - Level 3 Win
   layers:
   - Default
   - TransparentFX

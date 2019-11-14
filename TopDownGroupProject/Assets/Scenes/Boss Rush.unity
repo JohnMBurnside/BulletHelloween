@@ -53232,6 +53232,7 @@ GameObject:
   - component: {fileID: 1198724419}
   - component: {fileID: 1198724418}
   - component: {fileID: 1198724417}
+  - component: {fileID: 1198724422}
   m_Layer: 8
   m_Name: Dracula
   m_TagString: Enemy
@@ -53290,6 +53291,9 @@ MonoBehaviour:
   teleport2: {x: -3, y: -3}
   teleport3: {x: 3, y: -3}
   teleport4: {x: 3, y: 3}
+  teleportAnimation: 0
+  animationTimer: 0
+  animationSwitch: 2.2
 --- !u!114 &1198724418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53322,7 +53326,7 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.043418884, y: 0}
+  m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.25151527, y: 0.64}
   m_Direction: 0
 --- !u!212 &1198724420
@@ -53364,7 +53368,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f1c4c73bf66c413408aeececbcd96724, type: 3}
+  m_Sprite: {fileID: -5492265690380202868, guid: 7ad7ea31f27794cd1b77ade453c23625,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -53389,6 +53394,25 @@ Transform:
   m_Father: {fileID: 1837494189}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1198724422
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1198724416}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a221fa74cc9074c969ee375d4962954b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1236955909
 GameObject:
   m_ObjectHideFlags: 0
@@ -53531,6 +53555,7 @@ GameObject:
   - component: {fileID: 1242454007}
   - component: {fileID: 1242454006}
   - component: {fileID: 1242454005}
+  - component: {fileID: 1242454010}
   m_Layer: 8
   m_Name: Final Boss
   m_TagString: FinalBoss
@@ -53694,6 +53719,25 @@ Transform:
   m_Father: {fileID: 1837494189}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1242454010
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1242454004}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4e9f8b5fd3a42ff40a0535edab497650, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1257060722
 GameObject:
   m_ObjectHideFlags: 0
@@ -55791,7 +55835,7 @@ PrefabInstance:
     - target: {fileID: 5299304838690519520, guid: c67c5023201d544ee917cfe8de4328f5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 81.14
+      value: 33.66
       objectReference: {fileID: 0}
     - target: {fileID: 5299304838690519520, guid: c67c5023201d544ee917cfe8de4328f5,
         type: 3}

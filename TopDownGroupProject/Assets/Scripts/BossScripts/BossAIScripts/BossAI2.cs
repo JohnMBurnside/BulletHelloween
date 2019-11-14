@@ -68,9 +68,15 @@ public class BossAI2 : MonoBehaviour
     public Vector2 teleport2 = new Vector2(-5, -5);                 //How far the enemy will teleport the second time
     public Vector2 teleport3 = new Vector2(+5, -5);                 //How far the enemy will teleport the third time
     public Vector2 teleport4 = new Vector2(+5, +5);                 //How far the enemy will teleport the fourth time
+    [Header("Animation Settings")]                                  //ANIMATION VARIABLES
+    Animator draculaAC;                                             //Animator controller
+    public bool teleportAnimation = false;                          //True or false variable to activate teleport animation
+    public float animationTimer;                                    //Timer for animations
+    public float animationSwitch = 2f;
     //START FUNCTION
     void Start()
     {
+        draculaAC = GetComponent<Animator>();
         startPoint = boss.GetComponent<Transform>().position;
         homePoint = startPoint;
         teleportArea1Point = new Vector2(startPoint.x + teleport1.x, startPoint.y + teleport1.y);
@@ -81,7 +87,6 @@ public class BossAI2 : MonoBehaviour
     //UPDATE FUNCTION
     void Update()
     {
-        startPoint = boss.GetComponent<Transform>().position;
         //INTRO
         if (bossActive == true && intro == false)
         {
@@ -110,12 +115,25 @@ public class BossAI2 : MonoBehaviour
         //TELEPORT CONDITION
         if (bossActive == true && intro == true && hitCounter >= hitCounterTeleport)
         {
-            Teleport();
-            hitCounter = 0;
+            animationTimer += Time.deltaTime;
+            teleportAnimation = true;
+            if (animationTimer > animationSwitch)
+            {
+                teleportAnimation = false;
+                Teleport();
+                animationTimer = 0f;
+                hitCounter = 0;
+            }
         }
         //UPGRADE CONDITION
         if (boss.GetComponent<BossHealth>().bossHealth < boss.GetComponent<BossHealth>().maxBossHealth / 4)
             hitCounterTeleport = 5;
+        //ANIMATION CONDITIONS
+        if (teleportAnimation == true)
+            GetComponent<Animator>().SetBool("teleportAnimation", true);
+        if (teleportAnimation == false)
+            GetComponent<Animator>().SetBool("teleportAnimation", false);
+        startPoint = boss.GetComponent<Transform>().position;
     }
     //TRIGGER FUNCTION
     void OnTriggerEnter2D(Collider2D collision)

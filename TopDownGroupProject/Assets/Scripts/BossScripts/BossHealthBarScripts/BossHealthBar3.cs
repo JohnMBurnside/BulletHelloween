@@ -22,7 +22,7 @@ public class BossHealthBar3 : MonoBehaviour
         if(barOn == true)
         {
             timer += Time.deltaTime;
-            if(timer > 0.1f)
+            if(timer > 1f)
                     GetComponent<EdgeCollider2D>().isTrigger = false;
         }
     }
