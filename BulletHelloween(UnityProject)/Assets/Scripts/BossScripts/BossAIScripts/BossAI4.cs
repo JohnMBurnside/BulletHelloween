@@ -127,8 +127,10 @@ public class BossAI4 : MonoBehaviour
             Teleport();
             hitCounter = 0;
         }
-        //UPGRADE CONDITION
-        if (boss.GetComponent<BossHealth>().bossHealth < boss.GetComponent<BossHealth>().maxBossHealth / 4)
+		//UPGRADE CONDITION
+		if (boss.GetComponent<BossHealth>().bossHealth < boss.GetComponent<BossHealth>().maxBossHealth / 4)
+            //TRIGGER ANIMATION!!!!!!
+			bulletSpeed = 6;
             hitCounterTeleport = 10;
         //WAVES
         if (bossActive == true)

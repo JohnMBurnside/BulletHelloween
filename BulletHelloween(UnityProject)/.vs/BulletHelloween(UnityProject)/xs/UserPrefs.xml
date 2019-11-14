@@ -1,0 +1,21 @@
+﻿<Properties StartupConfiguration="{A5792FAA-3C07-853F-B631-E8AAA99CBFBF}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/BossScripts/BossAIScripts/BossAI4.cs">
+    <Files>
+      <File FileName="Assets/Scripts/BossScripts/BossAIScripts/BossAI4.cs" Line="132" Column="38" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BulletHelloween(UnityProject)" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="00fca44d-4ab3-4581-80ff-6a60e8c069e2" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
