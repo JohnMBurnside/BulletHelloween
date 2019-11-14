@@ -80,6 +80,11 @@ public class BossAI4 : MonoBehaviour
     public int shadeKill = 2;                                       //How many shade you killed
     public int shade = 0;                                           //Variable for Shadow function
     public bool shootOff = false;                                   //Variable to turn shooting off
+    [Header("Animation Settings")]                                  //ANIMATION VARIABLES
+    Animator headlessAC;                                            //Animator controller
+    public bool animation = false;                                  //True or false variable to activate teleport animation
+    public float animationTimer;                                    //Timer for animations
+    public float animationSwitch = 2f;                              //How long until the animation will stop
     //START FUNCTION
     void Start()
     {
@@ -93,6 +98,8 @@ public class BossAI4 : MonoBehaviour
         //TELEPORT POINTS
         teleportArea1Point = new Vector2(startPoint.x + teleport1.x, startPoint.y + teleport1.y);
         teleportArea2Point = new Vector2(startPoint.x + teleport2.x, startPoint.y + teleport2.y);
+        //ANIMATION
+        headlessAC = GetComponent<Animator>();
     }
     //UPDATE FUNCTION
     void Update()
@@ -127,10 +134,10 @@ public class BossAI4 : MonoBehaviour
             Teleport();
             hitCounter = 0;
         }
-		//UPGRADE CONDITION
-		if (boss.GetComponent<BossHealth>().bossHealth < boss.GetComponent<BossHealth>().maxBossHealth / 4)
-            //TRIGGER ANIMATION!!!!!!
-			bulletSpeed = 6;
+        //UPGRADE CONDITION
+        if (boss.GetComponent<BossHealth>().bossHealth < boss.GetComponent<BossHealth>().maxBossHealth / 4)
+            animation = true;
+            bulletSpeed = 6;
             hitCounterTeleport = 10;
         //WAVES
         if (bossActive == true)
@@ -171,6 +178,11 @@ public class BossAI4 : MonoBehaviour
             else
                 waveTimer = 0;
         }
+        //ANIMATION CONDITIONS
+        if (animation == true)
+            GetComponent<Animator>().SetBool("EnragedAnimation", true);
+        if (animation == false)
+            GetComponent<Animator>().SetBool("EnragedAnimation", false);
     }
     //TRIGGER FUNCTION
     void OnTriggerEnter2D(Collider2D collision)

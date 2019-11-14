@@ -72,7 +72,7 @@ public class BossAI2 : MonoBehaviour
     Animator draculaAC;                                             //Animator controller
     public bool teleportAnimation = false;                          //True or false variable to activate teleport animation
     public float animationTimer;                                    //Timer for animations
-    public float animationSwitch = 2f;
+    public float animationSwitch = 2f;                              //How long until the animation will stop
     //START FUNCTION
     void Start()
     {
@@ -133,7 +133,6 @@ public class BossAI2 : MonoBehaviour
             GetComponent<Animator>().SetBool("teleportAnimation", true);
         if (teleportAnimation == false)
             GetComponent<Animator>().SetBool("teleportAnimation", false);
-        startPoint = boss.GetComponent<Transform>().position;
     }
     //TRIGGER FUNCTION
     void OnTriggerEnter2D(Collider2D collision)

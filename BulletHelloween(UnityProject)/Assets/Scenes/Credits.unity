@@ -254,8 +254,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -283.90002, y: -13.914551}
-  m_SizeDelta: {x: 1352.2, y: 1028.8}
+  m_AnchoredPosition: {x: -788.6, y: 475.2}
+  m_SizeDelta: {x: 342.8, y: 120.3}
   m_Pivot: {x: 0.5, y: 0.46159163}
 --- !u!114 &424806603
 MonoBehaviour:
@@ -2322,22 +2322,23 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Art-------------------------------------------Liam
+  m_Text: 'Art---------------------------------------------Liam Ferguson
 
     Animation-------------------------------------Liam
+    Ferguson
 
-    Level
-    Design--------------------------------Austin
+    Level Design---------------------------------Austin Coulson
 
-    UI Design-----------------------------------Austin
+    UI
+    Design-------------------------------------Austin Coulson
 
-    Programming--------------------------John
+    Programming----------------------------------John
     Burnside
 
-    Boss Design--------------------------John Burnside
+    Boss Design-----------------------------------John Burnside
 
     Special
-    Thanks------------------------Mr. Adelmund'
+    Thanks--------------------------------Mr. Adelmund'
 --- !u!222 &857980808
 CanvasRenderer:
   m_ObjectHideFlags: 0

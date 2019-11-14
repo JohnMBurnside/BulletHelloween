@@ -53619,6 +53619,9 @@ MonoBehaviour:
   shadeKill: 2
   shade: 0
   shootOff: 0
+  animation: 0
+  animationTimer: 0
+  animationSwitch: 2
 --- !u!114 &1242454006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53712,8 +53715,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1242454004}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.21, y: 22.72, z: 56.021652}
-  m_LocalScale: {x: 4, y: 4, z: 1}
+  m_LocalPosition: {x: 0.29, y: 22.54, z: 56.021652}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 1837494189}
   m_RootOrder: 3
@@ -55757,7 +55760,7 @@ PrefabInstance:
     - target: {fileID: 5299304838690519520, guid: c67c5023201d544ee917cfe8de4328f5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.29
+      value: 79.7
       objectReference: {fileID: 0}
     - target: {fileID: 5299304838690519520, guid: c67c5023201d544ee917cfe8de4328f5,
         type: 3}
