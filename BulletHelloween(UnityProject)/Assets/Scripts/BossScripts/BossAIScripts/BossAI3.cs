@@ -104,11 +104,13 @@ public class BossAI3 : MonoBehaviour
                 Shoot();
             else if (waveTimer > secondWave && waveTimer < thirdWave)
             {
+                Shoot();
                 ShootPatternOneVar1(numberOfBullets);
                 ShootPatternOneVar2(numberOfBullets);
             }
             else if (waveTimer > thirdWave && waveTimer < reset)
             {
+                Shoot();
                 ShootPatternOneVar1(numberOfBullets);
                 ShootPatternOneVar2(numberOfBullets);
                 ShootPatternOneVar3(numberOfBullets);

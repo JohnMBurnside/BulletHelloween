@@ -13,6 +13,8 @@ public class BossHealth : MonoBehaviour
     [Header("Health Settings")]                 //HEALTH VARIABLES
     public int maxBossHealth = 50;              //Max health for the boss
     public int bossHealth = 50;                 //Boss health
+    [Header("Sound Settings")]                  //SOUND VARIABLES
+    public bool BruhSoundEffect2 = false;       //Tells whether to play Bruh Sound Effect #2
     //START FUNCTION
     void Start()
     {
@@ -24,9 +26,11 @@ public class BossHealth : MonoBehaviour
     {
         if (bossHealth < 1)
         {
+            BruhSoundEffect2 = true;    
             bounds.GetComponent<EdgeCollider2D>().enabled = false;
             bossHUD.GetComponent<Canvas>().enabled = false;
             Instantiate(healthPotion, transform.position, Quaternion.identity);
+            BruhSoundEffect2 = false;
             Destroy(gameObject);
         }
     }

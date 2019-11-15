@@ -6,7 +6,6 @@ public class EnemyAI : MonoBehaviour
     //VARIABLES
     //GENERAL VARIABLES
     public Transform player;
-    public GameObject prefab;
     //MOVEMENT BALANCE VARIABLES
     public Vector2 paceDirection;
     Vector3 startPosition;
@@ -33,7 +32,6 @@ public class EnemyAI : MonoBehaviour
         if (chaseDirection.magnitude < chaseTriggerDistance)
         {
             Chase();
-            Shoot();
         }
         else if (!home)
             GoHome();
@@ -84,7 +82,7 @@ public class EnemyAI : MonoBehaviour
         }*/
     }
     //SHOOT FUNCTION
-    void Shoot()
+    /*void Shoot()
     {
         timer += Time.deltaTime;
         if (timer > shootDelay)
@@ -97,5 +95,5 @@ public class EnemyAI : MonoBehaviour
             bullet.GetComponent<Rigidbody2D>().velocity = shootDir * bulletSpeed;
             Destroy(bullet, bulletLifetime);
         }
-    }
+    }*/
 }

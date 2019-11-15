@@ -12,6 +12,9 @@ GameObject:
   - component: {fileID: 1325094022786496458}
   - component: {fileID: 6169453901134282008}
   - component: {fileID: 4954792826834356838}
+  - component: {fileID: 8222883999399586523}
+  - component: {fileID: 8005649872552684975}
+  - component: {fileID: 1996637874962508316}
   m_Layer: 8
   m_Name: Shade Boss
   m_TagString: Enemy
@@ -118,7 +121,7 @@ MonoBehaviour:
   shadeBoss: {fileID: 1175364413340337557}
   bossActive: 1
   health: 10
-  bulletSpeed: 3
+  bulletSpeed: 5
   shootDelay: 0.5
   bulletLifetime: 10
   shootTimer: 0
@@ -134,3 +137,55 @@ MonoBehaviour:
   radius: 5
   shootPatternTimer1Var1: 0
   shootPatternTimer1Var2: 0
+--- !u!95 &8222883999399586523
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1175364413340337557}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 52badb15f8839475283443bc5546352e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8005649872552684975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1175364413340337557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c1afd24c5635f54bbc6cb9ec8c7bd7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!50 &1996637874962508316
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1175364413340337557}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

@@ -9,19 +9,19 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu.unity
     guid: e61de2aee661c4449b7c7c1e8146c585
   - enabled: 1
-    path: Assets/Scenes/Levels/Level 1.unity
+    path: Assets/Scenes/LevelsScenes/Level 1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Levels/Level 2.unity
+    path: Assets/Scenes/LevelsScenes/Level 2.unity
     guid: 6870ba17e41e5194883957d44e35a607
   - enabled: 1
-    path: Assets/Scenes/Levels/Level 3.unity
+    path: Assets/Scenes/LevelsScenes/Level 3.unity
     guid: d2b626340ae89b342817abb290f35f22
   - enabled: 1
-    path: Assets/Scenes/Levels/Level 4.unity
+    path: Assets/Scenes/LevelsScenes/Level 4.unity
     guid: 5bfad9ef941bdb748ba5f2b9ae44fd57
   - enabled: 1
-    path: Assets/Scenes/Boss Rush.unity
+    path: Assets/Scenes/BossRushScenes/Boss Rush.unity
     guid: 93d6b92c6b46d437e9b2a14f3369516d
   - enabled: 1
     path: Assets/Scenes/Credits.unity
