@@ -9,21 +9,6 @@ public class PlayerHealthBossRush : MonoBehaviour
     /// ~Player Health(Boss Rush)
     ///     -Only diffrence from the regular player health is there is no lives
     /// </summary>
-    [Header("Notes")]                               //NOTES
-    [TextArea]                                      //TAG NOTES
-    [Tooltip("Notes for what to name tags")]        //TAG NOTES
-    public string TagNotes =                        //TAG NOTES
-    "TAG NAMES\n" +                                 //TAG NOTES
-    "Enemies should be tagged as 'Enemy'\n" +       //TAG NOTES
-    "Projectiles should be tagged as 'Bullet'\n" +  //TAG NOTES
-    "Health Potion Tag is 'Health Potion'\n" +      //TAG NOTES
-    "Shield Potion Tag is 'Shield Potion'\n" +      //TAG NOTES    
-    "Power Up Potion Tag is 'Power Potion'\n";      //TAG NOTES
-    [TextArea]                                      //SCENE NAMES
-    [Tooltip("Notes for what to name scenes")]      //SCENE NAMES
-    public string SceneNotes =                      //SCENE NAMES
-    "SCENE NAMES\n" +                               //SCENE NAMES
-    "Game Over Scene is 'Game Over'\n";             //SCENE NAMES
     //VARIABLES                                     //VARIABLES
     [Header("General Variables")]                   //GENERAL VARIABLES
     public GameObject player;                       //Object variable for player
@@ -63,23 +48,7 @@ public class PlayerHealthBossRush : MonoBehaviour
     //COLLISION FUNCTION                           
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Enemy" || collision.gameObject.tag == "Bullet")
-        {
-            if (shield > 0)
-            {
-                shield--;
-                shieldSlider.value = shield;
-            }
-            else if (shield < 1)
-            {
-                if (health > 0)
-                {
-                    health--;
-                    healthSlider.value = health;
-                }
-            }
-        }
-        else if (collision.gameObject.tag == "Health Potion")
+        if (collision.gameObject.tag == "Health Potion")
         {
             maxHealth++;
             health = maxHealth;

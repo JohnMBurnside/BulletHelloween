@@ -87,6 +87,7 @@ public class BossAI2 : MonoBehaviour
     //UPDATE FUNCTION
     void Update()
     {
+        startPoint = boss.GetComponent<Transform>().position;
         //INTRO
         if (bossActive == true && intro == false)
         {
@@ -100,11 +101,13 @@ public class BossAI2 : MonoBehaviour
                 Shoot();
             else if (waveTimer > secondWave && waveTimer < thirdWave)
             {
+                Shoot();
                 ShootPatternOneVar1(numberOfBullets);
                 ShootPatternOneVar2(numberOfBullets);
             }
             else if (waveTimer > thirdWave && waveTimer < reset)
             {
+                Shoot();
                 ShootPatternOneVar1(numberOfBullets);
                 ShootPatternOneVar2(numberOfBullets);
                 ShootPatternOneVar3(numberOfBullets);

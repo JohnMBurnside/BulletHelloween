@@ -29,11 +29,12 @@ public class BossAI4 : MonoBehaviour
     public GameObject bossShadow;                                   //Shadow boss object
     public bool bossActive = false;							        //Tells if the boss is active or not
     [Header("Base Stats Settings")]						            //VARIABLES THAT'LL BALANCE THE BOSSES BASE STATS
-    public float bulletSpeed = 5f;							        //How fast the bullet will travel
+    public float bulletSpeed = 3f;							        //How fast the bullet will travel
     public float shootDelay = 0.5f;							        //How long the boss will wait to fire again
     public float bulletLifetime = 10.0f;				            //How long the bullet will last before being destroyed
     float shootTimer = 0f;                                          //Timer for shooting  
     [Header("Upgraded Stats Settings")]					            //VARIABLES THAT'LL BALANCE THE BOSSES UPGRADED STATS
+    public bool enraged = false;                                    //Tells whether the boss is enraged
     public float bulletSpeedUpgrade = 10f;                          //How fast the bullet will travel after the upgrade
     public float shootDelayUpgrade = 0.3f;			                //How long the boss will wait to fire again after the upgrade
     [Header("Wave Time Settings")] 								    //VARIABLES THAT'll CONTROL WHEN WAVES AND UPGRADES WILL OCCUR
@@ -81,8 +82,8 @@ public class BossAI4 : MonoBehaviour
     public int shade = 0;                                           //Variable for Shadow function
     public bool shootOff = false;                                   //Variable to turn shooting off
     [Header("Animation Settings")]                                  //ANIMATION VARIABLES
-    Animator headlessAC;                                            //Animator controller
-    public bool animation = false;                                  //True or false variable to activate teleport animation
+    //Animator headlessAC;                                            //Animator controller
+    //public bool animation = false;                                  //True or false variable to activate teleport animation
     public float animationTimer;                                    //Timer for animations
     public float animationSwitch = 2f;                              //How long until the animation will stop
     //START FUNCTION
@@ -99,7 +100,7 @@ public class BossAI4 : MonoBehaviour
         teleportArea1Point = new Vector2(startPoint.x + teleport1.x, startPoint.y + teleport1.y);
         teleportArea2Point = new Vector2(startPoint.x + teleport2.x, startPoint.y + teleport2.y);
         //ANIMATION
-        headlessAC = GetComponent<Animator>();
+        //headlessAC = GetComponent<Animator>();
     }
     //UPDATE FUNCTION
     void Update()
@@ -136,9 +137,11 @@ public class BossAI4 : MonoBehaviour
         }
         //UPGRADE CONDITION
         if (boss.GetComponent<BossHealth>().bossHealth < boss.GetComponent<BossHealth>().maxBossHealth / 4)
-            animation = true;
-            bulletSpeed = 6;
+        {
+            //animation = true;
+            //enraged = true;
             hitCounterTeleport = 10;
+        }
         //WAVES
         if (bossActive == true)
         {
@@ -148,6 +151,9 @@ public class BossAI4 : MonoBehaviour
                 shootPatternDelayVar1 = 0.5f;
                 shootPatternDelayVar2 = 1.25f;
                 shootPatternDelayVar3 = 0.5f;
+                bulletSpeed = 3;
+                if(enraged == true)
+                    bulletSpeed = 5;
                 if(shootOff == false)
                 {
                     ShootPatternOneVar1(numberOfBullets);
@@ -157,6 +163,8 @@ public class BossAI4 : MonoBehaviour
             else if (waveTimer > secondWave && waveTimer < thirdWave)
             {
                 bulletSpeed = 3;
+                if (enraged == true)
+                    bulletSpeed = 5;
                 if (shootOff == false)
                 {
                     ShootPatternOneVar1(numberOfBullets);
@@ -166,7 +174,9 @@ public class BossAI4 : MonoBehaviour
             }
             else if (waveTimer > thirdWave && waveTimer < fourthWave)
             {
-                bulletSpeed = 5;
+                bulletSpeed = 3;
+                if (enraged == true)
+                    bulletSpeed = 5;
                 if(shootOff == false)
                     ShootPatternTwoVar1();
             }
@@ -179,10 +189,10 @@ public class BossAI4 : MonoBehaviour
                 waveTimer = 0;
         }
         //ANIMATION CONDITIONS
-        if (animation == true)
+        /*if (animation == true)
             GetComponent<Animator>().SetBool("EnragedAnimation", true);
         if (animation == false)
-            GetComponent<Animator>().SetBool("EnragedAnimation", false);
+            GetComponent<Animator>().SetBool("EnragedAnimation", false);*/
     }
     //TRIGGER FUNCTION
     void OnTriggerEnter2D(Collider2D collision)
