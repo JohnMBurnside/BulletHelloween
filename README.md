@@ -1,5 +1,5 @@
 # TopDownGroupProject
-Repository for the Top-Down Group
+Repository for the Top-Down Group Project
 
 Using Unity Version: 2019.3.0b8
 
