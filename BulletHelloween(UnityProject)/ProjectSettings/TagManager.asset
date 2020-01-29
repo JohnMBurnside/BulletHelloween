@@ -19,6 +19,7 @@ TagManager:
   - Level 2 Win
   - Level 3 Win
   - Final Boss Room
+  - Boss
   layers:
   - Default
   - TransparentFX

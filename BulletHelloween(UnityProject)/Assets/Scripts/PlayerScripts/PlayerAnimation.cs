@@ -1,9 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿#region NAMESPACES
 using UnityEngine;
+#endregion
 public class PlayerAnimation : MonoBehaviour
 {
-    //UPDATE FUNCTION
+#if UNITY_PC
+    //UNITY FUNCTIONS
+    #region UPDATE FUNCTION
     void Update()
     {
         float x = Input.GetAxisRaw("Horizontal");
@@ -11,5 +13,20 @@ public class PlayerAnimation : MonoBehaviour
         GetComponent<Animator>().SetFloat("x", x);
         GetComponent<Animator>().SetFloat("y", y);
     }
+    #endregion
+#endif
+#if UNITY_ANDROID
+    #region VARIABLES
+    public Joystick joystick;
+    #endregion
+    #region UPDATE FUNCTION
+    void Update()
+    {
+        float x = joystick.Horizontal;
+        float y = joystick.Vertical;
+        GetComponent<Animator>().SetFloat("x", x);
+        GetComponent<Animator>().SetFloat("y", y);
+    }
+    #endregion
+#endif
 }
-///END OF SCRIPT!
