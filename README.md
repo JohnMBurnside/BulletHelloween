@@ -5,10 +5,10 @@ Repository for Bullet Helloween
 
 Using Unity Version: 2019.3.0b8
 
-## Latest Update: 1.0.1
-```1.0.1 Notes
-Bullet Helloween 1.0.1 Patch Notes
+## Latest Update: 2.0.0
+```2.0.0 Notes
+Bullet Helloween 2.0.0 Patch Notes
 
-~General Changes
-  -Fixed issue where you could push the boss around(boss changed to static object)
+~Supporting New Platform
+  -Added Support for Android
 ```
