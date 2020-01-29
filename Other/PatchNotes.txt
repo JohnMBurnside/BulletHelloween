@@ -1,5 +1,9 @@
 Patch notes for Bullet Helloween(.txt File)
 ----------------------------------
+Bullet Helloween 2.0.0 Patch Notes
+~Supporting New Platform
+  -Added Support for Android
+----------------------------------
 Bullet Helloween 1.0.1 Patch Notes
 ~General Changes
   -Fixed issue where you could push the boss around(boss changed to static object)
