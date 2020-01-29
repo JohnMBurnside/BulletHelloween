@@ -3,6 +3,12 @@ Patch notes for Bullet Helloween
 
 Version 1.0.1
 ## Notes
+```2.0.0 Notes
+Bullet Helloween 2.0.0 Patch Notes
+
+~Supporting New Platform
+  -Added Support for Android
+```
 ```1.0.1 Notes
 Bullet Helloween 1.0.1 Patch Notes
 
