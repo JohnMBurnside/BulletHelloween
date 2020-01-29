@@ -1,6 +1,4 @@
 # Bullet Helloween
-Support for Bullet Helloween is now finished
-
 Repository for Bullet Helloween
 
 Using Unity Version: 2019.3.0b8
