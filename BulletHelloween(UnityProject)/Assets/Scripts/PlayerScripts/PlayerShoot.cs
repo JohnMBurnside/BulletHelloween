@@ -30,7 +30,7 @@ public class PlayerShoot : MonoBehaviour
     #region SHOOT FUNCTION
     public void Shoot()
     {
-        #if UNITY_PC
+#if UNITY_STANDALONE
         if (Input.GetButton("Fire1") && timer > shootDelay)
         {
             timer = 0;

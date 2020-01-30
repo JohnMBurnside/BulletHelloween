@@ -5233,7 +5233,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 0}
   m_FillRect: {fileID: 2065219503}
   m_HandleRect: {fileID: 0}
@@ -6180,6 +6180,12 @@ PrefabInstance:
     - {fileID: 87454908846194195, guid: c67c5023201d544ee917cfe8de4328f5, type: 3}
     - {fileID: 5299304839708547069, guid: c67c5023201d544ee917cfe8de4328f5, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c67c5023201d544ee917cfe8de4328f5, type: 3}
+--- !u!4 &1082355656 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5299304838690519520, guid: c67c5023201d544ee917cfe8de4328f5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1082355655}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1223626126
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29906,7 +29912,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60e455f8f7f2440cebbe8ae6f672d3d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 1082355656}
   prefab: {fileID: 3128273846515683529, guid: 80c42d499f3ac46ddb68e19a4275711e, type: 3}
   boss: {fileID: 1485057385}
   bossLocation: {fileID: 1485057391}

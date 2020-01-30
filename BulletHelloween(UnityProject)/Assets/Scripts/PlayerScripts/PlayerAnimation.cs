@@ -3,7 +3,7 @@ using UnityEngine;
 #endregion
 public class PlayerAnimation : MonoBehaviour
 {
-#if UNITY_PC
+#if UNITY_STANDALONE
     //UNITY FUNCTIONS
     #region UPDATE FUNCTION
     void Update()

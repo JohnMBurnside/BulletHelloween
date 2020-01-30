@@ -468,7 +468,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 0}
   m_FillRect: {fileID: 229554374}
   m_HandleRect: {fileID: 0}
@@ -53443,7 +53443,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1619320701
 RectTransform:
   m_ObjectHideFlags: 0
@@ -53808,7 +53808,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 0}
   m_FillRect: {fileID: 366498071}
   m_HandleRect: {fileID: 0}
@@ -54497,7 +54497,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 0}
   m_FillRect: {fileID: 499703427}
   m_HandleRect: {fileID: 0}
@@ -54945,6 +54945,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6884700024777263139, guid: e3dabb63ecf154425a07bdd83c99d6a1,
         type: 3}
+    - target: {fileID: 6443025699341357299, guid: 2df86e436bbf94c5f9989d4620a34065,
+        type: 3}
+      propertyPath: maxBossHealth
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 6443025699341357299, guid: 2df86e436bbf94c5f9989d4620a34065,
+        type: 3}
+      propertyPath: bossHealth
+      value: 150
+      objectReference: {fileID: 0}
     - target: {fileID: 6443025699341357292, guid: 2df86e436bbf94c5f9989d4620a34065,
         type: 3}
       propertyPath: player

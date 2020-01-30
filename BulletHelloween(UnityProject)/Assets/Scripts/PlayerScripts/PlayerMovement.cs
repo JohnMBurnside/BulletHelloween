@@ -3,7 +3,7 @@ using UnityEngine;
 #endregion
 public class PlayerMovement : MonoBehaviour
 {
-#if UNITY_PC
+#if UNITY_STANDALONE
     //VARIABLES
     public float speed = 5.0f;
     //UPDATE FUNCTION

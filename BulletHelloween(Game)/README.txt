@@ -1,1 +1,0 @@
-To run the game launch TopDownGroupProject.exe
