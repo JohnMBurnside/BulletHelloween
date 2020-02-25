@@ -1,4 +1,6 @@
 # Bullet Helloween
+SUPPORT DISCONTINUED AS OF NOW
+
 Repository for Bullet Helloween
 
 Using Unity Version: 2019.3.0b8
