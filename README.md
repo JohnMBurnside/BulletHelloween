@@ -1,7 +1,9 @@
 # Bullet Helloween
 SUPPORT DISCONTINUED AS OF NOW
 
-Repository for Bullet Helloween
+Bullet Helloween is free to download, available on PC, Android.
+
+Unity Project also provided.
 
 Using Unity Version: 2019.3.0b8
 
