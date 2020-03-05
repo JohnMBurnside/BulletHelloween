@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Main Menu.unity
+    guid: e61de2aee661c4449b7c7c1e8146c585
+  - enabled: 0
+    path: Assets/Scenes/LevelsScenes/Level 1.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 0
+    path: Assets/Scenes/LevelsScenes/Level 2.unity
+    guid: 6870ba17e41e5194883957d44e35a607
+  - enabled: 0
+    path: Assets/Scenes/LevelsScenes/Level 3.unity
+    guid: d2b626340ae89b342817abb290f35f22
+  - enabled: 0
+    path: Assets/Scenes/LevelsScenes/Level 4.unity
+    guid: 5bfad9ef941bdb748ba5f2b9ae44fd57
+  - enabled: 1
+    path: Assets/Scenes/BossRushScenes/Boss Rush.unity
+    guid: 93d6b92c6b46d437e9b2a14f3369516d
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 20dc790e6bb4049a98a6b5067a7c1f12
+  - enabled: 1
+    path: Assets/Scenes/Game Over.unity
+    guid: dc768ab30401b8f4cb3ab80cbe68155c
+  - enabled: 1
+    path: Assets/Scenes/BossRushScenes/Boss Rush Final Boss.unity
+    guid: 35bfa6a5047d65d41be333f4c06dfa31
+  m_configObjects: {}
