@@ -1,5 +1,13 @@
 Patch notes for Bullet Helloween(.txt File)
 ----------------------------------
+Bullet Helloween 3.0.0 Patch Notes
+~Supporting New Platform
+  -Support for WebGL! Find game at https://johnmichaelproductions.github.io/BulletHelloween/BulletHelloween.html
+~Bug Fixes
+  -Fixed arrow shooting to point in all directions
+~Polish
+  -Put in new buttons for main menu
+----------------------------------
 Bullet Helloween 2.1.0 Patch Notes
 ~Bug Fixes
   -Fixed bug where player wasn't able to go to the final boss in boss rush
