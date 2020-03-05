@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - NextLevel
+  - Enemy Arrow
+  - Town
+  - Enemy
+  - Player Arrow
+  - Shop
+  - CameraZoom
+  - Death
+  - Coin
+  - SpawnEnemy
+  - Win
+  - TurnAway
+  - BossStart
+  - ArrowPickUp
+  - CeilFall
+  - Smashed
+  - Boss
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Player
+  - Player Arrows
+  - Enemy
+  - Enemy Arrows
+  - Triggers
+  - GooEnemy
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
