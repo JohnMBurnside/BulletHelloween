@@ -4347,7 +4347,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &456067068
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4921,10 +4921,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 456067068}
     m_Modifications:
-    - target: {fileID: 2929252283123773939, guid: aaa2c939c0359ac4dbce3f49e8b90252,
+    - target: {fileID: 2929252283123773937, guid: aaa2c939c0359ac4dbce3f49e8b90252,
         type: 3}
-      propertyPath: m_Name
-      value: Fixed Joystick
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2929252283123773937, guid: aaa2c939c0359ac4dbce3f49e8b90252,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2929252283123773937, guid: aaa2c939c0359ac4dbce3f49e8b90252,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252,
         type: 3}
@@ -5041,20 +5051,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2929252283123773937, guid: aaa2c939c0359ac4dbce3f49e8b90252,
+    - target: {fileID: 2929252283123773939, guid: aaa2c939c0359ac4dbce3f49e8b90252,
         type: 3}
-      propertyPath: m_Color.r
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2929252283123773937, guid: aaa2c939c0359ac4dbce3f49e8b90252,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2929252283123773937, guid: aaa2c939c0359ac4dbce3f49e8b90252,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0
+      propertyPath: m_Name
+      value: Fixed Joystick
       objectReference: {fileID: 0}
     - target: {fileID: 2929252285020698103, guid: aaa2c939c0359ac4dbce3f49e8b90252,
         type: 3}
@@ -6090,11 +6090,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 87454908846194195, guid: c67c5023201d544ee917cfe8de4328f5,
+        type: 3}
+      propertyPath: healthSlider
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 87454908846194195, guid: c67c5023201d544ee917cfe8de4328f5,
+        type: 3}
+      propertyPath: shieldSlider
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5299304838690519064, guid: c67c5023201d544ee917cfe8de4328f5,
+        type: 3}
+      propertyPath: joystick
+      value: 
+      objectReference: {fileID: 1223626128}
+    - target: {fileID: 5299304838690519065, guid: c67c5023201d544ee917cfe8de4328f5,
+        type: 3}
+      propertyPath: joystick
+      value: 
+      objectReference: {fileID: 681858757}
     - target: {fileID: 5299304838690519066, guid: c67c5023201d544ee917cfe8de4328f5,
         type: 3}
       propertyPath: m_Name
       value: Knight
       objectReference: {fileID: 0}
+    - target: {fileID: 5299304838690519071, guid: c67c5023201d544ee917cfe8de4328f5,
+        type: 3}
+      propertyPath: joystick
+      value: 
+      objectReference: {fileID: 681858757}
     - target: {fileID: 5299304838690519520, guid: c67c5023201d544ee917cfe8de4328f5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6150,31 +6175,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 87454908846194195, guid: c67c5023201d544ee917cfe8de4328f5,
-        type: 3}
-      propertyPath: healthSlider
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 87454908846194195, guid: c67c5023201d544ee917cfe8de4328f5,
-        type: 3}
-      propertyPath: shieldSlider
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5299304838690519065, guid: c67c5023201d544ee917cfe8de4328f5,
-        type: 3}
-      propertyPath: joystick
-      value: 
-      objectReference: {fileID: 681858757}
-    - target: {fileID: 5299304838690519064, guid: c67c5023201d544ee917cfe8de4328f5,
-        type: 3}
-      propertyPath: joystick
-      value: 
-      objectReference: {fileID: 1223626128}
-    - target: {fileID: 5299304838690519071, guid: c67c5023201d544ee917cfe8de4328f5,
-        type: 3}
-      propertyPath: joystick
-      value: 
-      objectReference: {fileID: 681858757}
     m_RemovedComponents:
     - {fileID: 8306591530075793415, guid: c67c5023201d544ee917cfe8de4328f5, type: 3}
     - {fileID: 87454908846194195, guid: c67c5023201d544ee917cfe8de4328f5, type: 3}
@@ -6193,10 +6193,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 456067068}
     m_Modifications:
-    - target: {fileID: 2929252283123773939, guid: aaa2c939c0359ac4dbce3f49e8b90252,
+    - target: {fileID: 2929252283123773937, guid: aaa2c939c0359ac4dbce3f49e8b90252,
         type: 3}
-      propertyPath: m_Name
-      value: ShootJoystick
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2929252283123773937, guid: aaa2c939c0359ac4dbce3f49e8b90252,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2929252283123773937, guid: aaa2c939c0359ac4dbce3f49e8b90252,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252,
         type: 3}
@@ -6313,20 +6323,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2929252283123773937, guid: aaa2c939c0359ac4dbce3f49e8b90252,
+    - target: {fileID: 2929252283123773939, guid: aaa2c939c0359ac4dbce3f49e8b90252,
         type: 3}
-      propertyPath: m_Color.r
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2929252283123773937, guid: aaa2c939c0359ac4dbce3f49e8b90252,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2929252283123773937, guid: aaa2c939c0359ac4dbce3f49e8b90252,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0
+      propertyPath: m_Name
+      value: ShootJoystick
       objectReference: {fileID: 0}
     - target: {fileID: 2929252285020698103, guid: aaa2c939c0359ac4dbce3f49e8b90252,
         type: 3}

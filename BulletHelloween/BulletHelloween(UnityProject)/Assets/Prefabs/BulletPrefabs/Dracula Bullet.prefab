@@ -1,7 +1,7 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!60 &2097147171501278036
-PolygonCollider2D:
+--- !u!68 &6375435135671145934
+EdgeCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -14,33 +14,14 @@ PolygonCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 0.2, y: 0.2}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_EdgeRadius: 0
   m_Points:
-    m_Paths:
-    - - {x: 0.5, y: -0.0625}
-      - {x: 0.5, y: 0.0625}
-      - {x: 0.484375, y: 0.140625}
-      - {x: 0.40625, y: 0.265625}
-      - {x: 0.28125, y: 0.296875}
-      - {x: -0.203125, y: 0.296875}
-      - {x: -0.21875, y: 0.21875}
-      - {x: -0.5, y: 0.171875}
-      - {x: -0.5, y: -0.109375}
-      - {x: -0.25, y: -0.171875}
-      - {x: -0.078125, y: -0.296875}
-      - {x: 0.03125, y: -0.296875}
-      - {x: 0.09375, y: -0.21875}
-      - {x: 0.234375, y: -0.125}
-      - {x: 0.46875, y: -0.0625}
---- !u!95 &807570359822181509
+  - {x: -0.016654134, y: -0.2911724}
+  - {x: -0.49662352, y: 0.006113291}
+  - {x: -0.022513986, y: 0.2882607}
+  - {x: 0.46132255, y: 0.009420395}
+  - {x: -0.009551525, y: -0.28534877}
+--- !u!95 &-603795604741287344
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
@@ -59,18 +40,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &3469830178565602418
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3011957465897324866}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c1afd24c5635f54bbc6cb9ec8c7bd7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &503714048934552388
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -78,10 +47,51 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 720581132445813805, guid: d95de3d14923d4a4ba825f61eb9314f1,
+        type: 3}
+      propertyPath: speedRotate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 720581132445813805, guid: d95de3d14923d4a4ba825f61eb9314f1,
+        type: 3}
+      propertyPath: spin
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 720581132445813805, guid: d95de3d14923d4a4ba825f61eb9314f1,
+        type: 3}
+      propertyPath: bat
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2647969215025632299, guid: d95de3d14923d4a4ba825f61eb9314f1,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 5033829181569882056, guid: 5d2582f6d050b754ba3ba1f14b79300f,
+        type: 3}
     - target: {fileID: 3400519093474521606, guid: d95de3d14923d4a4ba825f61eb9314f1,
         type: 3}
       propertyPath: m_Name
       value: Dracula Bullet
+      objectReference: {fileID: 0}
+    - target: {fileID: 3677238126501843494, guid: d95de3d14923d4a4ba825f61eb9314f1,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.009278595
+      objectReference: {fileID: 0}
+    - target: {fileID: 3677238126501843494, guid: d95de3d14923d4a4ba825f61eb9314f1,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.9506935
+      objectReference: {fileID: 0}
+    - target: {fileID: 3677238126501843494, guid: d95de3d14923d4a4ba825f61eb9314f1,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.9506935
+      objectReference: {fileID: 0}
+    - target: {fileID: 3677238126501843494, guid: d95de3d14923d4a4ba825f61eb9314f1,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.02552247
       objectReference: {fileID: 0}
     - target: {fileID: 4578073958766154316, guid: d95de3d14923d4a4ba825f61eb9314f1,
         type: 3}
@@ -147,37 +157,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2647969215025632299, guid: d95de3d14923d4a4ba825f61eb9314f1,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 3162643627496697238, guid: bdb67ea9ac2865b45a5143fc18a96009,
-        type: 3}
-    - target: {fileID: 720581132445813805, guid: d95de3d14923d4a4ba825f61eb9314f1,
-        type: 3}
-      propertyPath: speedRotate
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3677238126501843494, guid: d95de3d14923d4a4ba825f61eb9314f1,
-        type: 3}
-      propertyPath: m_Offset.x
-      value: -0.009278595
-      objectReference: {fileID: 0}
-    - target: {fileID: 3677238126501843494, guid: d95de3d14923d4a4ba825f61eb9314f1,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 0.9506935
-      objectReference: {fileID: 0}
-    - target: {fileID: 3677238126501843494, guid: d95de3d14923d4a4ba825f61eb9314f1,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 0.9506935
-      objectReference: {fileID: 0}
-    - target: {fileID: 3677238126501843494, guid: d95de3d14923d4a4ba825f61eb9314f1,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: 0.02552247
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3677238126501843494, guid: d95de3d14923d4a4ba825f61eb9314f1, type: 3}

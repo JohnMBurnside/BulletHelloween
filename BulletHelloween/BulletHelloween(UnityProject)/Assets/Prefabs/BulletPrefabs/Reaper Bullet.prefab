@@ -23,10 +23,50 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2097147171501278036, guid: 92201027910d34ac4a5ccc6dda74d120,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2097147171501278036, guid: 92201027910d34ac4a5ccc6dda74d120,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2468804627850327919, guid: 92201027910d34ac4a5ccc6dda74d120,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 2468804627850327919, guid: 92201027910d34ac4a5ccc6dda74d120,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.59478813
+      objectReference: {fileID: 0}
+    - target: {fileID: 2468804627850327919, guid: 92201027910d34ac4a5ccc6dda74d120,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.16037735
+      objectReference: {fileID: 0}
+    - target: {fileID: 2468804627850327919, guid: 92201027910d34ac4a5ccc6dda74d120,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.6415094
+      objectReference: {fileID: 0}
     - target: {fileID: 3011957465897324866, guid: 92201027910d34ac4a5ccc6dda74d120,
         type: 3}
       propertyPath: m_Name
       value: Reaper Bullet
+      objectReference: {fileID: 0}
+    - target: {fileID: 3741043907785585980, guid: 92201027910d34ac4a5ccc6dda74d120,
+        type: 3}
+      propertyPath: m_UseAutoMass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3741043907785585980, guid: 92201027910d34ac4a5ccc6dda74d120,
+        type: 3}
+      propertyPath: m_Mass
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4140245397226860808, guid: 92201027910d34ac4a5ccc6dda74d120,
         type: 3}
@@ -93,50 +133,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2468804627850327919, guid: 92201027910d34ac4a5ccc6dda74d120,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-    - target: {fileID: 2468804627850327919, guid: 92201027910d34ac4a5ccc6dda74d120,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0.59478813
-      objectReference: {fileID: 0}
-    - target: {fileID: 2468804627850327919, guid: 92201027910d34ac4a5ccc6dda74d120,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0.16037735
-      objectReference: {fileID: 0}
-    - target: {fileID: 2468804627850327919, guid: 92201027910d34ac4a5ccc6dda74d120,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0.6415094
-      objectReference: {fileID: 0}
-    - target: {fileID: 3741043907785585980, guid: 92201027910d34ac4a5ccc6dda74d120,
-        type: 3}
-      propertyPath: m_UseAutoMass
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3741043907785585980, guid: 92201027910d34ac4a5ccc6dda74d120,
-        type: 3}
-      propertyPath: m_Mass
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2097147171501278036, guid: 92201027910d34ac4a5ccc6dda74d120,
-        type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2097147171501278036, guid: 92201027910d34ac4a5ccc6dda74d120,
-        type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 0.2
-      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 807570359822181509, guid: 92201027910d34ac4a5ccc6dda74d120, type: 3}
     - {fileID: 2097147171501278036, guid: 92201027910d34ac4a5ccc6dda74d120, type: 3}
     - {fileID: 3469830178565602418, guid: 92201027910d34ac4a5ccc6dda74d120, type: 3}
+    - {fileID: -603795604741287344, guid: 92201027910d34ac4a5ccc6dda74d120, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 92201027910d34ac4a5ccc6dda74d120, type: 3}
 --- !u!1 &4777169306910682574 stripped
 GameObject:
