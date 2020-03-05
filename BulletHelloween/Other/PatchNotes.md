@@ -1,8 +1,18 @@
 # Patch Notes
 Patch notes for Bullet Helloween
 
-Version 2.1.0
+Version 3.0.0
 ## Notes
+```3.0.0 Notes
+Bullet Helloween 3.0.0 Patch Notes
+
+~Supporting New Platform
+  -Support for WebGL! Find game at https://johnmichaelproductions.github.io/BulletHelloween/BulletHelloween.html
+~Bug Fixes
+  -Fixed arrow shooting to point in all directions
+~Polish
+  -Put in new buttons for main menu
+```
 ```2.1.0 Notes
 Bullet Helloween 2.1.0 Patch Notes
 
