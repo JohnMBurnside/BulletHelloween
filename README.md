@@ -2,6 +2,8 @@
 
 This archive will serve as a list of games that me and others made in our first year of video game design. Some games look good and are well made, however some of the games are questionably good. Try them out regardless.
 
+Recommended to download a zip folder of the repository
+
 Thanks for playing,
 
 John Michael Burnside
