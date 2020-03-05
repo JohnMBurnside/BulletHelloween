@@ -21,4 +21,6 @@ ExportedObj/
 *.opendb
 *.pidb.meta
 *.pdb.meta
+*.apk
+*.unitypackage
 sysinfo.txt
