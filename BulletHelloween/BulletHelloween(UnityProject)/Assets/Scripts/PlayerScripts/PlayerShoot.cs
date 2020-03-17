@@ -30,6 +30,7 @@ public class PlayerShoot : MonoBehaviour
     #region SHOOT FUNCTION
     public void Shoot()
     {
+#if UNITY_STANDALONE
         if (Input.GetButton("Fire1") && timer > shootDelay)
         {
             timer = 0;
@@ -41,27 +42,18 @@ public class PlayerShoot : MonoBehaviour
             bullet.GetComponent<Rigidbody2D>().velocity = shootDir * bulletSpeed;
             Destroy(bullet, bulletLifetime);
         }
-        #if UNITY_ANDROID
+#endif
+#if UNITY_ANDROID
         if ( joystick.Direction != new Vector2(0,0) && timer > shootDelay)
         {
             timer = 0;
             GameObject bullet = Instantiate(prefab, transform.position, Quaternion.identity);
             shootDir = new Vector2(joystick.Direction.x, joystick.Direction.y);
+            shootDir.Normalize();
             bullet.GetComponent<Rigidbody2D>().velocity = shootDir * bulletSpeed;
             Destroy(bullet, bulletLifetime);
         }
-        #endif
-/*
- *  timer = 0;
-    GameObject bullet = Instantiate(prefab, transform.position, Quaternion.identity);
-    Touch touch = Input.GetTouch(0);
-    Vector3 touchPos = Camera.main.ScreenToWorldPoint(touch.position);
-    touchPos.z = 0;
-    Vector2 shootDir = new Vector2(touchPos.x - transform.position.x, touchPos.y - transform.position.y);
-    shootDir.Normalize();
-    bullet.GetComponent<Rigidbody2D>().velocity = shootDir * bulletSpeed;
-    Destroy(bullet, bulletLifetime);
-    */
+#endif
 }
 #endregion
 }

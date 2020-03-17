@@ -3,6 +3,7 @@ using UnityEngine;
 #endregion
 public class PlayerAnimation : MonoBehaviour
 {
+#if UNITY_STANDALONE
     //UNITY FUNCTIONS
     #region UPDATE FUNCTION
     void Update()
@@ -13,9 +14,10 @@ public class PlayerAnimation : MonoBehaviour
         GetComponent<Animator>().SetFloat("y", y);
     }
     #endregion
+#endif
 #if UNITY_ANDROID
     #region VARIABLES
-    public Joystick joystick;
+        public Joystick joystick;
     #endregion
     #region UPDATE FUNCTION
     void Update()

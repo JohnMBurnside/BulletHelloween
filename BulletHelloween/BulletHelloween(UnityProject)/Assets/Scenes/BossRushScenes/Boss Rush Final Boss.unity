@@ -4342,12 +4342,12 @@ GameObject:
   - component: {fileID: 456067070}
   - component: {fileID: 456067069}
   m_Layer: 0
-  m_Name: MobileCanvas (1)
+  m_Name: MobileCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &456067068
 RectTransform:
   m_ObjectHideFlags: 0
