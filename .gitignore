@@ -1,4 +1,5 @@
 # Unity git ignore
+# Directories to ignore
 [Ll]ibrary/
 [Tt]emp/
 [Oo]bj/
@@ -8,6 +9,7 @@ Assets/AssetStoreTools*
 .vs/
 ExportedObj/
 .consulo/
+# File extensions to ignore
 *.csproj
 *.unityproj
 *.sln
