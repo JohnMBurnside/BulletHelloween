@@ -1,6 +1,6 @@
 # Unity Archive
 
-This archive will serve as a list of games that me and others made in our first year of video game design. Some games look good and are well made, however some of the games are questionably good or bad, Try them out regardless.
+This archive will serve as a list of games that me and others made in our first year of video game design. Some games I made by myself and others were made in groups of three. Some games look good and are well made, however some of the games are questionably good or bad, Try them out regardless.
 
 You can download only the project or only the build folders in releases
 
