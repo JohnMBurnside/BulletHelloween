@@ -1,0 +1,755 @@
+fileFormatVersion: 2
+guid: 7ab2cb735f8f88b44aa577c3e497ab5c
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  mosaicSpriteImportData:
+  - name: BossArena
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 340
+      width: 451
+      height: 773
+    spriteID: d3d2b588a2d16a54f9d8e07d1f8d9af5
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -621, y: 340}
+  - name: TempleArea
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 1076
+      height: 328
+    spriteID: 364831ff2e6738846b8650b5ff769396
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: -578}
+  - name: LavaArea
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1308
+      width: 293
+      height: 152
+    spriteID: b4c8e469c407b814197d916b169f0dd3
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -340, y: 1308}
+  - name: WaterArea
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1121
+      width: 355
+      height: 179
+    spriteID: 1cb80604321001d4da0148b2f080b22b
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 1121}
+  - name: SpecialArea
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1841
+      y: 4
+      width: 182
+      height: 102
+    spriteID: 8f3abeac372e8e047b9901c4ce738cc4
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1578, y: -306}
+  - name: SnowyMountain
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1032
+      y: 340
+      width: 603
+      height: 177
+    spriteID: 290b54f5f2dd1e64a97c7b6f1f6efe93
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 708, y: -263}
+  - name: MountainClimb
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1088
+      y: 4
+      width: 359
+      height: 311
+    spriteID: e06498bdf58dfef49b8d0e2c46915050
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 608, y: -410}
+  - name: MinecartArea
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 463
+      y: 340
+      width: 561
+      height: 330
+    spriteID: 0eea4a271712f6a4fb8ee0588ba01fab
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 186, y: 200}
+  - name: UndergroundLayerTwo
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1455
+      y: 4
+      width: 378
+      height: 235
+    spriteID: 1681e35fd9b88e44eac145d937009ffa
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1455, y: -145}
+  - name: UndergroundLayerOne
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 463
+      y: 678
+      width: 496
+      height: 164
+    spriteID: 180afa320354db143b15ba17e7c07593
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 463, y: 351}
+  - name: GroundLevel
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 463
+      y: 850
+      width: 490
+      height: 130
+    spriteID: 385f79ad637987149939515754ee8280
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 463, y: 369}
+  rigSpriteImportData:
+  - name: BossArena
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 340
+      width: 451
+      height: 773
+    spriteID: e4830b4cd99b824469486fb455c00abc
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -621, y: 340}
+  - name: TempleArea
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 1076
+      height: 328
+    spriteID: 37cd637c12eb1ac428865c8c8c9236c0
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: -578}
+  - name: LavaArea
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1308
+      width: 293
+      height: 152
+    spriteID: 21a336d7834f8e9408e5fb845b111139
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -340, y: 1308}
+  - name: WaterArea
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1121
+      width: 355
+      height: 179
+    spriteID: c3e3ab21d0ba8844284b1b357eac9739
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 1121}
+  - name: SpecialArea
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1841
+      y: 4
+      width: 182
+      height: 102
+    spriteID: 40abbbe74e20ac146ab776f7af69df73
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1578, y: -306}
+  - name: SnowyMountain
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1032
+      y: 340
+      width: 603
+      height: 177
+    spriteID: 521f3c26598e5e544bbf10b8ae7b691a
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 708, y: -263}
+  - name: MountainClimb
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1088
+      y: 0
+      width: 359
+      height: 311
+    spriteID: ad7bf4874f0cfa6479c3044b646e716b
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 608, y: -410}
+  - name: MinecartArea
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 463
+      y: 340
+      width: 561
+      height: 330
+    spriteID: fd7f2a2977a5dd4498db3e7c8e36ecb9
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 186, y: 200}
+  - name: CrystalCavern
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1449
+      y: 4
+      width: 378
+      height: 235
+    spriteID: 00b9d3f4c45ffc84da35b965a71cf6d2
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1455, y: -145}
+  - name: UndergroundLayerOne
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 463
+      y: 678
+      width: 496
+      height: 164
+    spriteID: 72bb01f01b8810941a2333c8782615f9
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 463, y: 351}
+  - name: GroundLevel
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 463
+      y: 850
+      width: 490
+      height: 130
+    spriteID: 3f933f5e6b72f6c489a5ab2c5e0e1f7b
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 463, y: 369}
+  platformSettings: []
+  mosaicLayers: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  importedTextureWidth: 2048
+  importedTextureHeight: 2048
+  documentSize: {x: 1076, y: 920}
+  paperDollMode: 0
+  keepDupilcateSpriteName: 0
+  spriteCategoryList:
+    categories: []
+  textureActualWidth: 2048
+  textureActualHeight: 2048
+  spritePackingTag: 
+  resliceFromLayer: 0
+  characterMode: 0
+  mosaicPSDLayers:
+  - name: BossArena
+    spriteName: BossArena
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d3d2b588a2d16a54f9d8e07d1f8d9af5
+    layerID: 0
+    mosaicPosition: {x: 4, y: 340}
+  - name: TempleArea
+    spriteName: TempleArea
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 364831ff2e6738846b8650b5ff769396
+    layerID: 1729772658
+    mosaicPosition: {x: 4, y: 4}
+  - name: LavaArea
+    spriteName: LavaArea
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b4c8e469c407b814197d916b169f0dd3
+    layerID: -667662647
+    mosaicPosition: {x: 4, y: 1308}
+  - name: WaterArea
+    spriteName: WaterArea
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 1cb80604321001d4da0148b2f080b22b
+    layerID: -1786768128
+    mosaicPosition: {x: 4, y: 1121}
+  - name: SpecialArea
+    spriteName: SpecialArea
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8f3abeac372e8e047b9901c4ce738cc4
+    layerID: -1296468220
+    mosaicPosition: {x: 1841, y: 4}
+  - name: SnowyMountain
+    spriteName: SnowyMountain
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 290b54f5f2dd1e64a97c7b6f1f6efe93
+    layerID: -1257368853
+    mosaicPosition: {x: 1032, y: 340}
+  - name: MountainClimb
+    spriteName: MountainClimb
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e06498bdf58dfef49b8d0e2c46915050
+    layerID: -843328230
+    mosaicPosition: {x: 1088, y: 4}
+  - name: MinecartArea
+    spriteName: MinecartArea
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 0eea4a271712f6a4fb8ee0588ba01fab
+    layerID: 647292638
+    mosaicPosition: {x: 463, y: 340}
+  - name: UndergroundLayerTwo
+    spriteName: UndergroundLayerTwo
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 1681e35fd9b88e44eac145d937009ffa
+    layerID: -1238692270
+    mosaicPosition: {x: 1455, y: 4}
+  - name: UndergroundLayerOne
+    spriteName: UndergroundLayerOne
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 180afa320354db143b15ba17e7c07593
+    layerID: 1396082448
+    mosaicPosition: {x: 463, y: 678}
+  - name: GroundLevel
+    spriteName: GroundLevel
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 385f79ad637987149939515754ee8280
+    layerID: -1803851885
+    mosaicPosition: {x: 463, y: 850}
+  rigPSDLayers:
+  - name: BossArena
+    spriteName: BossArena
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e4830b4cd99b824469486fb455c00abc
+    layerID: 0
+    mosaicPosition: {x: 4, y: 340}
+  - name: TempleArea
+    spriteName: TempleArea
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 37cd637c12eb1ac428865c8c8c9236c0
+    layerID: 1729772658
+    mosaicPosition: {x: 4, y: 4}
+  - name: LavaArea
+    spriteName: LavaArea
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 21a336d7834f8e9408e5fb845b111139
+    layerID: -667662647
+    mosaicPosition: {x: 4, y: 1308}
+  - name: WaterArea
+    spriteName: WaterArea
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c3e3ab21d0ba8844284b1b357eac9739
+    layerID: -1786768128
+    mosaicPosition: {x: 4, y: 1121}
+  - name: SpecialArea
+    spriteName: SpecialArea
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 40abbbe74e20ac146ab776f7af69df73
+    layerID: -1296468220
+    mosaicPosition: {x: 1841, y: 4}
+  - name: SnowyMountain
+    spriteName: SnowyMountain
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 521f3c26598e5e544bbf10b8ae7b691a
+    layerID: -1257368853
+    mosaicPosition: {x: 1032, y: 340}
+  - name: MountainClimb
+    spriteName: MountainClimb
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ad7bf4874f0cfa6479c3044b646e716b
+    layerID: -843328230
+    mosaicPosition: {x: 1088, y: 4}
+  - name: MinecartArea
+    spriteName: MinecartArea
+    isGroup: 0
+    parentIndex: -1
+    spriteID: fd7f2a2977a5dd4498db3e7c8e36ecb9
+    layerID: 647292638
+    mosaicPosition: {x: 463, y: 340}
+  - name: UndergroundLayerTwo
+    spriteName: UndergroundLayerTwo
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 00b9d3f4c45ffc84da35b965a71cf6d2
+    layerID: -1238692270
+    mosaicPosition: {x: 1455, y: 4}
+  - name: UndergroundLayerOne
+    spriteName: UndergroundLayerOne
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 72bb01f01b8810941a2333c8782615f9
+    layerID: 1396082448
+    mosaicPosition: {x: 463, y: 678}
+  - name: GroundLevel
+    spriteName: GroundLevel
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 3f933f5e6b72f6c489a5ab2c5e0e1f7b
+    layerID: -1803851885
+    mosaicPosition: {x: 463, y: 850}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+  generateGOHierarchy: 0
+  textureAssetName: Map Texture
+  prefabAssetName: Map Prefab
+  spriteLibAssetName: Map Sprite Lib
+  secondarySpriteTextures: []

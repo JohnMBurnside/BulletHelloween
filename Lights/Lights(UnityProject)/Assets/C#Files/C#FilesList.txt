@@ -1,0 +1,47 @@
+﻿C:\Users\JohnM\UnityProjects\Lights(Repository)\Lights\Assets\C#Files...
+\MonoBehaviourFiles
+    \Intro.cs
+        Attach this MonoBehaviour to the intro canvas in level 0
+        This will display the text in order and load into level 1 after all is done
+    \MenuLighting.cs
+        Attach this MonoBehaviour to a empty object that will hold the menu lights
+        Uses arrays to rotate lights off and on for a seemless and cool menu experince
+    \MenuLight.cs
+        Attach this MonoBehaviour to the menu lights, this MonoBehaviour will turn the lights on and off depending on the delay variable
+        Creates a seemless and cool menu experince
+    \Player.cs
+        Attach this MonoBehaviour to the player
+        Deals with collision
+        Deals with health points
+        Deals with everything that has to do with the players components and its variables
+    \SafeLight.cs
+        Attach this MonoBehaviour to lights that the player can go under to be healed(or in other words, to be safe)
+        Deals with its light radius
+    \SplashScreen.cs
+        Attach this MonoBehaviour to the splash screen canvas
+        Makes the splash screen load the main menu after a certain amount of time
+    \UI.cs
+        Attach this to UI Canvas
+        Deals with Main Menu UI, Pause Menu UI, ect.
+    \Wall.cs
+        Attach to walls or the ground
+        Used to see where the walls are in the scene view
+        Is destroyed on Start() so it doesn't take up procceser space
+\SaveDataFiles
+    \PlayerData.cs
+        Class for Player Data
+        Used for saving
+    \SaveSystem.cs
+        Class for converting save data to binary
+        Also used for loading said data
+\ScriptableObjects
+    \SaveDataObject.cs
+        Object that is able to save data outside the game and in the editor
+    \VersionControlObject.cs
+        Handles versions for the game
+\UnityEngineUniversalFiles
+    \UnityEngineNamespace.cs
+        This MonoBehaviour is to add peronsalized functions to the Unity Engine namespace to utilize any where in the game
+        UniversalF class for commonly used function
+        LightsF class for functions dealing with lighting
+        ColorsF class for dealing with colors
